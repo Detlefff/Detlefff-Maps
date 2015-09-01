@@ -1,0 +1,1 @@
+/^(map|roadmap|hybridmap|satellitemap|terrainmap) (.*?)$/i
