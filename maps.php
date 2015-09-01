@@ -20,6 +20,6 @@ class maps extends Script
                 break;
         }
 
-		return $this->send($this->message->number, 'http://maps.google.com/maps/api/staticmap?markers=' . rawurlencode($this->matches[2]) . '&size=640x640&maptype=' . $this->type . '&sensor=false&format=png', 'image');
+		return $this->send('http://maps.google.com/maps/api/staticmap?markers=' . rawurlencode($this->matches[2]) . '&size=640x640&maptype=' . $this->type . '&sensor=false&format=png', 'image');
     }
 }
