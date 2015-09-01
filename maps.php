@@ -5,8 +5,6 @@ class maps extends Script
 {
     public function run()
     {
-        //map|roadmap|hybridmap|satellitemap
-        print_r($this->matches);
         switch (strtolower($this->matches[1])) {
             case 'hybridmap':
                 $this->type = 'hybrid';
