@@ -1,6 +1,12 @@
 <?php
 class maps extends Script
 {
+    protected $helpMessage = "'map LOCATION': Returns a roadmap\n"
+                            ."'satellitemap LOCATION': Returns a satellitemap\n"
+                            ."'hybridmap LOCATION': Returns a hybridmap"
+                            ."'terrainmap LOCATION': Returns a terrainmap";
+    protected $description = 'Returns a map of the given location';
+
     public function run()
     {
         switch (strtolower($this->matches[1])) {
